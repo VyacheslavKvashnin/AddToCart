@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct TabBar: View {
-    @ObservedObject var homeMadel = HomEModel()
+    @ObservedObject var homeModel = HomEModel()
     var body: some View {
         TabView {
-            Home(homeModel: homeMadel)
+            Home(homeModel: homeModel)
                 .tabItem { Image(systemName: "house") }
             
-            NewCart(homeModel: homeMadel)
+            NewCart(homeModel: homeModel)
                 .tabItem { Image(systemName: "cart") }
         }
     }
